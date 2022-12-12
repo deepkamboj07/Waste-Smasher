@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background_splash">
+
+    <TextView
+        android:id="@+id/regisText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WASTE SMASHER"
+        android:fontFamily="@font/bangers"
+        android:textAlignment="center"
+        android:textSize="45dp"
+        android:layout_marginTop="15dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:textColor="#008744"/>
+
+       <RelativeLayout
+           android:id="@+id/fullform"
+           android:layout_below="@+id/regisText"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginEnd="20dp"
+           android:layout_marginStart="20dp"
+           android:orientation="vertical"
+           android:background="@drawable/bg_login"
+           android:padding="20dp"
+           android:gravity="center">
+
+           <TextView
+               android:id="@+id/WelcomeTextView"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/register_anth"
+               android:textColor="@color/colorBackground"
+               android:textSize="25sp"
+               android:textStyle="bold" />
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/leaf"/>
+
+           <TextView
+               android:id="@+id/readItTogetherTextView"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/WelcomeTextView"
+               android:layout_marginTop="10dp"
+               android:text="@string/Save_The_Earth"
+               android:textColor="#008744"
+               android:textStyle="bold"
+               android:textSize="15sp" />
+
+
+           <RelativeLayout
+               android:id="@+id/regis_form"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/readItTogetherTextView"
+               android:paddingTop="25dp"
+               android:paddingBottom="25dp"
+               android:orientation="vertical">
+
+               <EditText
+                   android:id="@+id/regisName"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:inputType="text"
+                   android:layout_marginTop="10dp"
+                   android:hint="Name"
+                   android:textColor="@color/black"
+                   android:textColorHint="#00b159"
+                   android:textSize="15sp" />
+
+               <EditText
+                   android:id="@+id/emailEditText"
+                   android:layout_below="@+id/regisName"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:inputType="textEmailAddress"
+                   android:layout_marginTop="20dp"
+                   android:hint="@string/email"
+                   android:textColor="@color/black"
+                   android:textColorHint="#00b159"
+                   android:textSize="15sp" />
+               <EditText
+                   android:id="@+id/countryCode"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@+id/emailEditText"
+                   android:layout_marginTop="20dp"
+                   android:text="+91"
+                   android:textSize="15sp"
+                   android:textStyle="bold"
+                   android:paddingRight="15dp"/>
+
+               <EditText
+                   android:id="@+id/phoneNo"
+                   android:layout_below="@+id/emailEditText"
+                   android:layout_toRightOf="@+id/countryCode"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:inputType="number"
+                   android:layout_marginTop="20dp"
+                   android:hint="Phone Number"
+                   android:textColor="@color/black"
+                   android:textColorHint="#00b159"
+                   android:textSize="15sp" />
+
+               <EditText
+                   android:id="@+id/regisAddress"
+                   android:layout_below="@id/phoneNo"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:inputType="text"
+                   android:layout_marginTop="20dp"
+                   android:hint="Address"
+                   android:textColor="@color/black"
+                   android:textColorHint="#00b159"
+                   android:textSize="15sp" />
+
+               <EditText
+                   android:id="@+id/regisCity"
+                   android:layout_below="@id/regisAddress"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:inputType="text"
+                   android:layout_marginTop="20dp"
+                   android:hint="City"
+                   android:textColor="@color/black"
+                   android:textColorHint="#00b159"
+                   android:textSize="15sp" />
+               <EditText
+                   android:id="@+id/regisPincode"
+                   android:layout_below="@id/regisCity"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:inputType="number"
+                   android:layout_marginTop="20dp"
+                   android:hint="Pincode"
+                   android:textColor="@color/black"
+                   android:textColorHint="#00b159"
+                   android:textSize="15sp" />
+
+               <EditText
+                   android:id="@+id/passwordEditText"
+                   android:layout_below="@id/regisPincode"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="20dp"
+                   android:inputType="textPassword"
+                   android:hint="@string/password"
+                   android:textColor="@color/black"
+                   android:textColorHint="#00b159"
+                   android:textSize="15sp" />
+
+               <RelativeLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_centerInParent="true">
+
+                   <com.github.ybq.android.spinkit.SpinKitView
+                       xmlns:app="http://schemas.android.com/apk/res-auto"
+                       android:id="@+id/spin_kit"
+                       style="@style/SpinKitView.Large.Circle"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_centerInParent="true"
+                       app:SpinKit_Color="#008744"
+                       tools:ignore="MissingConstraints"
+                       android:visibility="gone"/>
+
+               </RelativeLayout>
+
+           </RelativeLayout>
+
+           <Button
+               android:id="@+id/regisButton"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/regis_form"
+               android:background="@drawable/button_drawable"
+               android:text="@string/register"
+               android:gravity="center"
+               android:textAllCaps="false"
+               android:textColor="#008744"
+               android:textSize="16dp" />
+
+           <TextView
+               android:id="@+id/sing_in"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="10dp"
+               android:background="?android:attr/selectableItemBackground"
+               android:clickable="true"
+               android:layout_below="@+id/regisButton"
+               android:focusable="true"
+               android:gravity="center"
+               android:padding="5dp"
+               android:text="@string/sing_in"
+               android:textColor="@color/colorTextView"
+               android:textSize="15sp" />
+
+
+       </RelativeLayout>
+
+
+
+</RelativeLayout>

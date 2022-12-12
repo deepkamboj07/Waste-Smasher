@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:elevation="55dp"
+        android:background="#76b4bd ">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="2dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/previousBio"
+                android:layout_width="45dp"
+                android:layout_height="35dp"
+                android:src="@drawable/prevoius"
+                android:layout_marginTop="4dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?android:attr/selectableItemBackground"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/antic"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:text="Waste"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:layout_below="@+id/toolBar"
+        android:id="@+id/regisText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Biodegradable Waste"
+        android:fontFamily="@font/bangers"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        android:layout_marginTop="15dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:textColor="#008744"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/regisText"
+        android:layout_marginBottom="20dp">
+
+        <RelativeLayout
+            android:id="@+id/fullform"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:orientation="vertical"
+            android:background="@drawable/bg_form"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="60dp"
+            android:paddingBottom="60dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/WelcomeTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Waste Near You"
+                android:textColor="@color/colorBackground"
+                android:textSize="25sp"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/uploadBWasteImg"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/WelcomeTextView"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?android:attr/selectableItemBackground">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/camera"/>
+                <TextView
+                    android:layout_marginStart="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="Upload Waste Picture"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginTop="-2dp"
+                android:padding="7dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="-3dp"
+                android:layout_toRightOf="@+id/uploadBWasteImg">
+                <ImageView
+                    android:id="@+id/wasteImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/testing"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/regis_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/uploadBWasteImg"
+                android:paddingTop="25dp"
+                android:paddingBottom="25dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+               <LinearLayout
+                   android:id="@+id/typecont"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+                   <TextView
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       android:text="Waste Type   : "
+                       android:textSize="17sp"
+                       android:textColor="#808080"/>
+                   <Spinner
+                       android:id="@+id/spinner"
+                       android:layout_weight="1"
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content" />
+               </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/add_cont"
+                    android:layout_below="@+id/typecont">
+                    <EditText
+                        android:id="@+id/BioAddress"
+                        android:layout_width="0dp"
+                        android:layout_weight="4"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:layout_marginTop="20dp"
+                        android:hint="Address of Waste"
+                        android:textColor="@color/black"
+                        android:textColorHint="#808080"
+                        android:textSize="15sp" />
+                    <LinearLayout
+                        android:id="@+id/location"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="1dp"
+                        android:orientation="vertical"
+                        android:background="?android:attr/selectableItemBackground">
+
+                      <ImageView
+                          android:layout_width="35dp"
+                          android:layout_height="30dp"
+                          android:src="@drawable/location"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Current Location"
+                            android:textSize="7dp"
+                            android:gravity="center"
+                            android:textColor="#800000"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/BioCity"
+                    android:layout_below="@id/add_cont"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:layout_marginTop="20dp"
+                    android:hint="City"
+                    android:textColor="@color/black"
+                    android:textColorHint="#808080"
+                    android:textSize="15sp" />
+                <EditText
+                    android:id="@+id/BioPincode"
+                    android:layout_below="@id/BioCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:layout_marginTop="20dp"
+                    android:hint="Pincode"
+                    android:textColor="@color/black"
+                    android:textColorHint="#808080"
+                    android:textSize="15sp" />
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <com.github.ybq.android.spinkit.SpinKitView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/spin_kit"
+                        style="@style/SpinKitView.Large.Circle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_centerInParent="true"
+                        app:SpinKit_Color="#008744"
+                        tools:ignore="MissingConstraints"
+                        android:visibility="gone"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/OrganicSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/regis_form"
+                android:background="@drawable/button_drawable"
+                android:text="Submit"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

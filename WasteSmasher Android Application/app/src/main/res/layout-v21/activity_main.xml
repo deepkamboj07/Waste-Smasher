@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:elevation="30dp"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="2dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/app_icon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bangers"
+                android:padding="2dp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/app_name"
+                android:textColor="#008744"
+                android:textSize="30dp" />
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <FrameLayout
+        android:id="@+id/mainActivityContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/menu_bar_bottom"
+        android:layout_below="@+id/toolBar">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <com.github.ybq.android.spinkit.SpinKitView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/spin_kit"
+                style="@style/SpinKitView.Large.Circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_centerInParent="true"
+                app:SpinKit_Color="#008744"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+    <!--- ___________________ Bottom Menu_____________________-->
+    <LinearLayout
+        android:id="@+id/menu_bar_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:elevation="35dp"
+        android:layout_alignParentBottom="true"
+        android:padding="9dp"
+        android:paddingBottom="2dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="center"
+        android:background="@drawable/bg_bottom_menu">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:padding="16dp"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/home"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/bg_icon"/>
+        <ImageView
+            android:id="@+id/news"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="20dp"
+            android:padding="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/news_paper"
+            android:background="@drawable/bg_icon"/>
+        <ImageView
+            android:id="@+id/addPost"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="20dp"
+            android:padding="16dp"
+            android:src="@drawable/ic_baseline_add_24"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/bg_icon"/>
+        <ImageView
+            android:id="@+id/selling"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="20dp"
+            android:padding="16dp"
+            android:src="@drawable/sell"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/bg_icon"/>
+        <ImageView
+            android:id="@+id/setting"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="20dp"
+            android:padding="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/setting"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/bg_icon"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

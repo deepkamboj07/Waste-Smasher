@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="5dp"
+    android:layout_margin="3dp">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/home_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:elevation="5dp"
+        android:backgroundTint="#f5f5f5"
+        app:cardCornerRadius="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/heading"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/asul_bold"
+                    android:padding="10dp"
+                    android:text="This is heading of the news which we use in the furter news application."
+                    android:textSize="23dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+                 <TextView
+                     android:id="@+id/news_description"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="1"
+                     android:padding="2dp"
+                     android:textAlignment="viewStart"
+                     android:textSize="15dp"
+                     android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley "/>
+                <ImageView
+                    android:layout_weight="1"
+                    android:id="@+id/news_image"
+                    android:layout_width="match_parent"
+                    android:padding="6dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/testing"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/news_author"
+                android:textStyle="italic"
+                android:text="~ Unknown"
+                android:textSize="15dp"
+                android:padding="13dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <View
+        android:id="@+id/hr_lin"
+        android:layout_below="@+id/home_profile"
+        android:layout_width="10000dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_height="2dp"
+        android:background="#F5F5F5"
+        android:layout_centerInParent="true"
+        android:elevation="10dp"
+        android:layout_marginTop="5dp" />
+
+</RelativeLayout>

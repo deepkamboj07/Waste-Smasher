@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Biodegredable"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:elevation="25dp"
+        android:background="@color/white"
+        android:backgroundTint="#76b4bd">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="2dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/previousBio"
+                android:layout_width="45dp"
+                android:layout_height="35dp"
+                android:src="@drawable/prevoius"
+                android:layout_marginTop="4dp"
+                android:background="?android:attr/selectableItemBackground"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/antic"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:text="Biodegradable waste"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="What is Biodegradable waste ?"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="23dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/BioAnswer"
+                android:textSize="16dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="180dp"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/biodeg2"/>
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="170dp"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/biodeg1"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/hr_lin"
+                android:layout_below="@+id/profile_cont"
+                android:layout_width="10000dp"
+                android:layout_height="2dp"
+                android:background="#D3D3D3"
+                android:layout_centerInParent="true"
+                android:elevation="10dp"
+                android:layout_marginTop="7dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+                <TextView
+                    android:id="@+id/issueText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Any Organic Waste Around You ?"
+                    android:textStyle="bold"
+                    android:textSize="23dp"
+                    android:gravity="center"/>
+
+                <Button
+                    android:id="@+id/ButtonBiodegradable"
+                    android:layout_below="@+id/issueText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_margin="15dp"
+                    android:textSize="13dp"
+                    android:text="Submit Detail"
+                    android:textColor="@color/white"
+                    android:padding="10dp"
+                    android:background="@drawable/button_drawable"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

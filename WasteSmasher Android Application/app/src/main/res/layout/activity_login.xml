@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_splash">
+<RelativeLayout
+    android:id="@+id/login_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="20dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="130dp"
+    android:orientation="vertical"
+    android:background="@drawable/bg_login"
+    android:padding="35dp"
+    android:layout_marginBottom="80dp"
+    android:gravity="center">
+
+        <TextView
+            android:id="@+id/WelcomeTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_back"
+            android:textColor="@color/colorBackground"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/leaf"/>
+
+    <TextView
+        android:id="@+id/readItTogetherTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/WelcomeTextView"
+        android:layout_marginTop="10dp"
+        android:text="@string/Save_The_Earth"
+        android:textColor="#008744"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/loginButton"
+            android:layout_below="@+id/readItTogetherTextView"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/emaillogincont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#00b159">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/emaillogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    android:hint="@string/email"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/passcont"
+                android:layout_below="@id/emaillogincont"
+                android:layout_width="match_parent"
+                app:passwordToggleEnabled="true"
+                android:textColorHint="#00b159"
+                app:passwordToggleContentDescription="password should greater then 5 digit"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/passwordlogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textPassword"
+                    android:hint="@string/password"
+                    android:textColor="@color/black"
+                    android:textColorHint="#00b159"
+                    android:textSize="15sp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <FrameLayout
+                android:layout_below="@id/passcont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/sing_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_up"
+                    android:textColor="@color/colorTextView"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?android:attr/selectableItemBackground"/>
+
+
+                <TextView
+                    android:id="@+id/forgetpass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:text="@string/forget_password"
+                    android:textColor="@color/colorTextView"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?android:attr/selectableItemBackground"/>
+
+            </FrameLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <com.github.ybq.android.spinkit.SpinKitView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/spin_kit"
+                    style="@style/SpinKitView.Large.Circle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_centerInParent="true"
+                    app:SpinKit_Color="#008744"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_above="@+id/skipTextView"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/button_drawable"
+            android:text="@string/login"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:textColor="#008744"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/skipTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="@string/skip"
+            android:textColor="@color/colorTextView"
+            android:textSize="15sp" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

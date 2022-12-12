@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Waste Smasher</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="Save_The_Earth">Save The Earth</string>
+    <string name="skip">Skip</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="emailor">Email or Phone Number</string>
+    <string name="password">Password</string>
+    <string name="sign_up">Sign up</string>
+    <string name="forget_password">Forget Password.?</string>
+    <string name="register_anth">Your first step with us ! </string>
+    <string name="register">Register</string>
+    <string name="sing_in">Already have an account? Sing In</string>
+    <string name="varify">verify</string>
+    <string name="resend">Don"t get OTP ?</string>
+    <string name="resendBt">  RESEND OTP</string>
+    <string name="otp">You can Regenerate OTP After 60 Seconds</string>
+    <string name="varification">Mobile Number Verification</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="log_out">log out</string>
+    <string name="name">User Name</string>
+    <string name="Uemail">User Email</string>
+    <string name="action_settings">Settings</string>
+    <string name="profile_pic">Upload Profile Pic</string>
+    <string name="address">User Address</string>
+    <string name="nonBio">A Non-Biodegradable material can be defined as a kind of substance which cannot be broken down by natural organisms and acts as a source of pollution.Unlike biodegradable wastes, non-biodegradable cannot be easily handled. Non-biodegradable wastes are those who cannot be decomposed or dissolved by natural agents They remain on earth for thousands of years without any degradation. Hence, the threat caused by them is also more critical. A notable example is the plastics which are a commonly used material in almost every field.</string>
+    <string name="BioAnswer">Biodegradable waste is a type of waste, typically originating from plant or animal sources, which may be degraded by other living organisms. Wastes that cannot be broken by other living organisms are called non-biodegradable. Biodegradable waste can be commonly found in municipal solid waste (sometimes called biodegradable municipal waste, or BMW) as green waste, food waste, paper waste and biodegradable plastic.</string>
+</resources>
