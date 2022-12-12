@@ -1,0 +1,85 @@
+.main{
+    padding: 10px;
+    position: relative;
+    width:inherit;
+    height: 100vh;
+    background-image: url('/images/tree.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main .overlay{
+    position:absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.684);
+}
+h1{
+    padding: 10px;
+    text-align: center;
+    color: green;
+}
+.request-container{
+    padding: 50px;
+    text-align: center;
+    justify-content: center;
+    color: white;
+}
+.request-row{
+    width: 60%;
+    margin: auto;
+    border-radius: 10px;
+    border: 0.5px solid gray;
+    display: flex;
+    padding: 20px;
+    margin-top: 10px;
+    box-shadow: -1px 2px 3px 1px rgba(128, 128, 128, 0.129);
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.request-row .organic-img{
+    margin-top: 25px;
+    text-align: center;
+    width: 200px;
+    height: 180px;
+
+}
+.text-content{
+    padding: 30px;
+}
+
+.user {
+    padding: 10px;
+    margin-left: 10px;
+}
+.user img{
+    width: 37px;
+    height: 37px;
+    border-radius: 30px;
+    margin-left: 5px;
+}
+.user div{
+    display: flex;
+}
+.service-button{
+    padding: 30px;
+    margin-left: 10px;
+}
+.service-button button{
+    margin: 5px;
+    width: 150px;
+    box-shadow: -1px 2px 3px 1px rgba(22, 22, 22, 0.737);
+}
+
+.error{
+    color: rgb(0, 217, 255);
+    padding: 50px;
+    text-align: center;
+    font-size: 50px;
+    background-color: rgb(130, 129, 129);
+    width: 40%;
+    margin: auto;
+    margin-top: 150px;
+    box-shadow: -1px 2px 3px 1px rgba(225, 222, 222, 0.737);
+}

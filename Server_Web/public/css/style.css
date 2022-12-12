@@ -1,0 +1,35 @@
+
+.main-cont{
+    position: relative;
+    width:inherit;
+    height: 100vh;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    background-image: url('/images/leaf.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat-y;
+}
+.main-cont .overlay{
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left:0;
+    right:0;
+    background-color: rgba(0, 0, 0, 0.504);
+    text-align: center;
+    padding-top: 300px;
+}
+.main-cont .overlay h2{
+    font-size: 65px;
+    font-weight: 900;
+}
+.main-cont .overlay div{
+    margin-top: 40px;
+}
+.main-cont .overlay div button{
+    margin: 0px 15px;
+    font-size: 20px;
+    padding: 16px;
+}
