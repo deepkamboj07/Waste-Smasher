@@ -5,6 +5,7 @@ It is the android application made in android studio for managing the waste prob
 
 ## Waste Smasher Web Server
 It made on Nodejs for handling server request express.js framwork is used.
+
 Make sure you install in your machine : 
 - Nodejs
 - MongoDB
@@ -19,4 +20,11 @@ Snap Shot of Web Server
 ![image](https://user-images.githubusercontent.com/78980433/207037262-5460f74a-91d9-4811-8dc8-979b3794b26f.png)
 
 ![image](https://user-images.githubusercontent.com/78980433/207037424-7096867b-c28c-4657-a52e-efdf379f50fe.png)
+
+
+## Waste Smasher Android Application
+It made on Android studio and uses api for fetching Lates news on enviorment.
+Simply open folder in android studio make sure you have update and sync all file and then run on your android studio Emulator.
+
+Snap Shot of android application
 
